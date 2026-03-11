@@ -1,0 +1,83 @@
+/* styles.css - shared by login.html and signup.html */
+:root{
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --accent: #2563eb;
+  --muted: #6b7280;
+  --radius: 10px;
+  --gap: 12px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg);
+  color:#111827;
+}
+
+.page{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+.card{
+  width:100%;
+  max-width:420px;
+  background:var(--card);
+  padding:28px;
+  border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(15,23,42,0.08);
+}
+
+.title{
+  margin:0 0 16px 0;
+  font-size:22px;
+  text-align:center;
+}
+
+.form{
+  display:flex;
+  flex-direction:column;
+  gap:var(--gap);
+}
+
+label{
+  font-size:13px;
+  color:var(--muted);
+}
+
+input[type="text"], input[type="password"]{
+  padding:10px 12px;
+  border:1px solid #e6e9ef;
+  border-radius:8px;
+  font-size:15px;
+}
+
+.btn{
+  margin-top:6px;
+  padding:10px 12px;
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  border-radius:8px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.btn:hover{opacity:0.95}
+
+.muted{
+  margin-top:12px;
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
+}
+
+a{color:var(--accent); text-decoration:none}
+
+a:hover{text-decoration:underline}
